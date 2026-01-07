@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en & id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Hitung Diskon & Pajak</title>
+  </head>
+  <body>
+    <!-- konten utama -->
+    <h1> Hitung Diskon & Pajak </h1>
+
+    <input type="type" id="hargaAwal" placeholder ="Masukkan Harga Awal", inputmode="numeric">
+    <input type="number" id="diskon" placeholder ="Masukkan Persentasi Diskon (%)">
+    <input type="number" id="pajak" placeholder ="Masukkan Persentasi Pajak (%)">
+
+    <button onclick="hitungHargaAkhir()">Hitung Harga Akhir</button>
+    
+    <p id="showdiskon"> Diskon: <span id="diskonValue"></span></p>
+    <p id="showpajak"> Pajak: <span id="pajakValue"></span></p>
+    <p id="showhargaakhir"> Harga Akhir: <span id="hargaAkhirValue"></span></p>
+
+   <!-- Cara script javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
