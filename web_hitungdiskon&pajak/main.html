@@ -4,22 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Hitung Diskon & Pajak</title>
+    
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- konten utama -->
-    <h1> Hitung Diskon & Pajak </h1>
-
-    <input type="type" id="hargaAwal" placeholder ="Masukkan Harga Awal", inputmode="numeric">
-    <input type="number" id="diskon" placeholder ="Masukkan Persentasi Diskon (%)">
-    <input type="number" id="pajak" placeholder ="Masukkan Persentasi Pajak (%)">
-
-    <button onclick="hitungHargaAkhir()">Hitung Harga Akhir</button>
-    
-    <p id="showdiskon"> Diskon: <span id="diskonValue"></span></p>
-    <p id="showpajak"> Pajak: <span id="pajakValue"></span></p>
-    <p id="showhargaakhir"> Harga Akhir: <span id="hargaAkhirValue"></span></p>
-
+    <div class="container">
+        <div class="card">
+            <!-- konten utama -->
+            <h1> Hitung Diskon & Pajak </h1>
+            
+            <input type="type" id="hargaAwal" placeholder ="Masukkan Harga Awal", inputmode="numeric">
+            <input type="number" id="diskon" placeholder ="Masukkan Persentasi Diskon (%)">
+            <input type="number" id="pajak" placeholder ="Masukkan Persentasi Pajak (%)">
+            
+            <button onclick="hitungHargaAkhir()">Hitung Harga Akhir</button>
+            <div class="result">
+                <p id="showdiskon"> Diskon: <span id="diskonValue">Rp -</span></p>
+                <p id="showpajak"> Pajak: <span id="pajakValue">Rp -</span></p>
+                <p id="showhargaakhir"> Harga Akhir: <span id="hargaAkhirValue">Rp -</span></p>
+            </div>
+        </div>
+    </div>
    <!-- Cara script javascript -->
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
